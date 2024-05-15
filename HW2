@@ -1,0 +1,87 @@
+using System;
+
+namespace HW2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int number1 = 4;
+            int number2 = 3;
+
+            //print the sum of two numbers
+            int sum = number1 + number2;
+            Console.WriteLine("The sum is: " + sum);
+
+            //print the result of dividing two numbers
+            int div = number1 / number2;
+            Console.WriteLine("The divide is: " + div);
+
+            double div1 = number1 / (double)number2;
+            Console.WriteLine("The divide is: " + div1);
+
+            //print the result of the specified operations
+            // -1 + 4 * 6
+            int number3 = -1;
+            int number4 = 4;
+            int number5 = 6;
+
+            int result1 = number3 + number4 * number5;
+            Console.WriteLine("The result1 is: " + result1);
+
+            // ( 35+ 5 ) % 7
+            int number6 = 35;
+            int number7 = 5;
+            int number8 = 7;
+
+            double result2 = (number6 + number7) / (double)number8;
+            Console.WriteLine("The result2 is: " + result2);
+
+            // 14 + -4 * 6 / 11
+            int number9 = 14;
+            int number10 = -4;
+            int number11 = 6;
+            int number12 = 11;
+
+            double result3 = number9 + number10 * number11 / (double)number12;
+            Console.WriteLine("The result3 is: " + result3);
+
+            // 2 + 15 / 6 * 1 - 7 % 2
+            int number13 = 2;
+            int number14 = 15;
+            int number15 = 6;
+            int number16 = 1;
+            int number17 = 7;
+            int number18 = 2;
+
+            double result4 = number13 + number14 / (double)number15 * number16 - number17 / (double)number18;
+            Console.WriteLine("The result4 is: " + result4);
+
+            //print the output of multiplication of three numbers which will be entered by the user
+            Console.Write("Input the first number to multiply: ");
+            int number19 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input the second number to multiply: ");
+            int number20 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input the third number to multiply: ");
+            int number21 = Convert.ToInt32(Console.ReadLine());
+
+            int mult = number19 * number20 * number21;
+            Console.WriteLine("Multiplication of three numbers is: " + mult);
+
+            //swap two numbers
+            Console.Write("Input the First Number: ");
+            int number22 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input the Second Number: ");
+            int number23 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("First Number is: " + number23);
+            Console.WriteLine("Second Number is: " + number22);
+
+            number22 = (number22 + number23) - (number23 = number22);
+            Console.WriteLine("First Number is: " + number22);
+            Console.WriteLine("Second Number is: " + number23);
+
+
+
+        }
+    }
+}
